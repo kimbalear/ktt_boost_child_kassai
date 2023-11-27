@@ -1,4 +1,4 @@
-# moodle-theme_ktt_boost_child
+# moodle-theme_ktt_boost_child_kassai
 
 http://localhost:8080/
 
@@ -51,22 +51,22 @@ docker run -d --name moodle \
 https://hub.docker.com/r/bitnami/moodle
 
 docker ps
-docker exec -it moodle_dev-moodle-1 bash
+docker exec -it moodle411-moodle-1 bash
 cd /bitnami/moodle
 ls
 
 docker ps
-docker cp D:\a23\GitHubRepo\ktt_boost_child moodle_dev-moodle-1:/bitnami/moodle/theme/ktt_boost_child
+docker cp C:\GitHubRepositories\kimbalear\ktt_boost_child_kassai moodle411-moodle-1:/bitnami/moodle/theme/ktt_boost_child_kassai
 
-docker exec -it moodle_dev-moodle-1 bash
-ls -l /bitnami/moodle/theme/ktt_boost_child/
+docker exec -it moodle411-moodle-1 bash
+ls -l /bitnami/moodle/theme/ktt_boost_child_kassai/
 
 ### del directory
 
-docker exec moodle_dev-moodle-1 rm -r /bitnami/moodle/theme/ktt_boost_child
+docker exec moodle411-moodle-1 rm -r /bitnami/moodle/theme/ktt_boost_child_kassai
 
 ## Testing
-http://localhost/theme/ktt_boost_child/test.php
+http://localhost/theme/ktt_boost_child_kassai/test.php
 
 # dependencias 
 * static page
